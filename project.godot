@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Actor",
+"language": "GDScript",
+"path": "res://scenes/Actor.gd"
+} ]
+_global_script_class_icons={
+"Actor": ""
+}
+
+[application]
+
+config/name="MutantRPG"
+run/main_scene="res://scenes/StartWorld.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=800
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Enemy"
+2d_physics/layer_3="Items"
+2d_physics/layer_4="Portals"
+2d_physics/layer_5="Ground"
+2d_physics/layer_6="Bullet"
+2d_physics/layer_7="Trap"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
